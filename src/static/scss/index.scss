@@ -1,0 +1,51 @@
+@import "./global.scss";
+@import "@/static/scss/colorui.css";
+@import "@/static/font/iconfont.css";
+
+page {
+  background-color: #f5f6f7;
+}
+
+.uni-input-placeholder,
+.uni-textarea-placeholder {
+  font-size: 14px !important;
+  color: #999 !important;
+  font-weight: 400 !important;
+}
+
+
+:root {
+  --bottom-bar-height: 50px;
+}
+
+.uni-page-body,
+uni-app,
+uni-page,
+uni-page-wrapper,
+uni-page-body {
+  height: calc(100vh - var(--bottom-bar-height));
+}
+
+/* #ifdef APP-PLUS */
+.status-bar {
+  height: var(--status-bar-height);
+}
+
+/* #endif*/
+
+/* #ifdef H5 */
+.status-bar {
+  height: calc(var(--status-bar-height) + env(safe-area-inset-top));
+}
+
+/* #endif */
+
+
+
+.load-more-wrapper {
+  padding-top: 5px !important;
+}
+
+:deep(.uni-scroll-view-refresher) {
+  background: #f5f6f7 !important;
+}

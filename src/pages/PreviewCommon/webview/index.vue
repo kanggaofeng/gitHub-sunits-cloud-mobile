@@ -1,0 +1,37 @@
+<template>
+  <div>
+    <CustomNavBar title="浏览网页" :back="true" backgroundColor="#fff" statusBarBackgroundColor="#fff" color="#000" statusBarTextStyle="black"></CustomNavBar>
+    <view v-if="params.url">
+      <web-view :webview-styles="webviewStyles" :src="`${params.url}`"></web-view>
+    </view>
+  </div>
+</template>
+
+<script>
+export default {
+  data() {
+    return {
+      params: {},
+      webviewStyles: {
+        progress: {
+          color: '#FF3333',
+        },
+      },
+    }
+  },
+  props: {
+    src: {
+      type: [String],
+      default: null,
+    },
+  },
+  onLoad(event) {
+    this.params = event
+    if (event.title) {
+      uni.setNavigationBarTitle({
+        title: event.title,
+      })
+    }
+  },
+}
+</script>

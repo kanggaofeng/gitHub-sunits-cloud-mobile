@@ -1,0 +1,390 @@
+.dynamic-form {
+  width: 100%;
+  box-sizing: border-box;
+  // padding-left: 6px;
+}
+
+.form-item {
+  margin-bottom: 16px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+uni-textarea {
+  height: 100px;
+}
+
+.form-title {
+  color: #333;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.required-star {
+  margin-right: 4px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.red {
+  color: #ff4d4f;
+}
+
+.blue {
+  color: #3370ff;
+}
+
+.form-input-container {
+  display: flex;
+  align-items: center;
+  // background-color: #f9fafb;
+  border-radius: 4px;
+  min-height: 40px;
+  width: 100%;
+  border: 1px solid #e0e3e9;
+  box-sizing: border-box;
+}
+
+/* 图片上传时自适应高度 */
+.form-input-container.auto-height {
+  height: auto;
+  min-height: 40px;
+  padding: 10px 12px;
+}
+
+.form-input {
+  flex: 1;
+  font-size: 14px;
+  min-height: 40px;
+  line-height: 40px;
+  width: 100%;
+  background-color: transparent;
+  padding: 0 12px;
+  box-sizing: border-box;
+}
+
+.select-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.select-input {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 12px;
+  box-sizing: border-box;
+  position: relative;
+
+}
+
+/* 日期和时间选择器样式优化 */
+.date-picker {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.select-text {
+  font-size: 14px;
+  color: #333;
+  font-weight: 400;
+  flex: 1;
+}
+
+.select-placeholder {
+  font-size: 14px;
+  color: #999;
+  font-weight: 400;
+  flex: 1;
+}
+
+.select-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+}
+
+.arrow-icon {
+  color: #999;
+  font-size: 12px;
+}
+
+.radio-group {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  gap: 16px;
+  height: 100%;
+  align-items: center;
+  padding: 12px;
+}
+
+.radio-item {
+  display: flex;
+  align-items: center;
+  margin-right: 12px;
+}
+
+.radio-label {
+  margin-left: 6px;
+  font-size: 14px;
+  color: #333;
+}
+
+/* 图片上传样式优化 */
+.img-upload-container {
+  width: 100%;
+  min-height: 100px;
+}
+
+/* 深度选择器修复样式 */
+:deep(.uni-radio .uni-radio-input) {
+  margin-right: 0;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+}
+
+:deep(.uni-radio .uni-radio-input.uni-radio-input-checked) {
+  background-color: #3370ff !important;
+  border-color: #3370ff !important;
+}
+
+:deep(.uni-radio .uni-radio-input.uni-radio-input-checked:before) {
+  color: #fff;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+:deep(.uni-radio-input.uni-radio-input-disabled) {
+  background-color: #f5f7fa;
+  border-color: #e4e7ed;
+}
+
+/* 日期时间选择器样式修复 */
+:deep(.uni-date) {
+  width: 100%;
+}
+
+:deep(.uni-date-editor) {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+}
+
+:deep(.uni-date-editor--x) {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+
+:deep(.uni-date-editor--x .uni-date__icon-clear) {
+  position: absolute;
+  right: 28px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+:deep(.uni-date-editor--x .uni-date__icon) {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+:deep(.uni-date-x) {
+  width: 100%;
+}
+
+:deep(.uni-date-single) {
+  width: 100%;
+}
+
+:deep(.uni-select--x) {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+:deep(.uni-select__input-text) {
+  width: 100%;
+  padding-right: 25px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+:deep(.uni-select__input-placeholder) {
+  color: #999;
+}
+
+:deep(.uni-select__icon) {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* 图片上传组件样式重置 */
+:deep(.oss-upload-container) {
+  width: 100%;
+}
+
+:deep(.file-list) {
+  margin-bottom: 0;
+}
+
+:deep(.img-preview) {
+  width: 80px;
+  height: 80px;
+}
+
+:deep(.img-upload-btn) {
+  width: 80px;
+  height: 80px;
+}
+
+:deep(.preview-image) {
+  object-fit: cover;
+}
+
+
+.form-textarea {
+  width: 100%;
+  min-height: 80px;
+  padding: 8px 12px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.img-upload-container {
+  width: 100%;
+  min-height: 80px;
+}
+
+.rich-text-container {
+  width: 100%;
+}
+
+
+// 工单详情页面表单
+.formInfo-container {
+  padding: 15px;
+  margin-bottom: 10px;
+  background-color: #fff;
+
+  .card-container {
+    background-color: #fff;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+
+    .card-title {
+      font-size: 16px;
+      font-weight: 500;
+      position: relative;
+      padding-left: 10px;
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 3px;
+        width: 4px;
+        height: 16px;
+        background-color: #3370ff;
+        border-radius: 2px;
+      }
+    }
+  }
+
+  .formSubmitBtn {
+    background-color: #3370ff;
+    color: #fff;
+    border-radius: 20px;
+    font-size: 14px;
+    padding: 5px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+    margin-left: auto;
+  }
+
+  .zancunBtn {
+    background-color: #3370ff;
+    color: #fff;
+    border-radius: 25px;
+    font-size: 14px;
+    padding: 5px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+    margin-left: auto;
+  }
+}
+
+.form-input-container {
+  flex: 1;
+  position: relative;
+
+  &.auto-height {
+    height: auto;
+  }
+
+  &.is-disabled {
+    background-color: #f5f7fa;
+
+    .form-input,
+    .form-textarea,
+    .select-input,
+    .date-picker,
+    .select-text,
+    .radio-label {
+      background-color: #f5f7fa;
+      color: #999;
+      cursor: not-allowed;
+      pointer-events: none;
+      border-color: #e4e7ed;
+    }
+  }
+}
+
+
+.radio-group {
+  &.disabled {
+    pointer-events: none;
+  }
+
+  .radio-item {
+    &.is-disabled {
+      pointer-events: none;
+      opacity: 0.6;
+
+      .radio-label {
+        color: #999;
+        cursor: not-allowed;
+      }
+    }
+  }
+}

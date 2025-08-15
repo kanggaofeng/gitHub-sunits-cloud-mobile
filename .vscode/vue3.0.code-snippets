@@ -1,0 +1,8 @@
+{
+  "Vue3.0快速生成模板": {
+    "scope": "vue",
+    "prefix": "Vue3.0-template-router",
+    "body": ["<template>", "  <div class=\"app-container\">info</div>", "</template>\n", "<script setup name=\"Job\">", "</script>\n", "<style scoped lang=\"scss\">", "</style>"],
+    "description": "快速生成一个基于 Vue 3.0 的单文件组件模板",
+  },
+}

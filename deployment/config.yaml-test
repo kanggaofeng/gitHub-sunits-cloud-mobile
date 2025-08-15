@@ -1,0 +1,46 @@
+global:
+  replicas: 1
+  service: true
+
+log:
+  enable: false
+  files:
+  - name: runtimelog
+    dir: /apps/source/runtime/log
+    pattern: "*/*.log"
+  - name: phplog
+    dir: /data/logs
+    pattern: "*.log"
+
+env:
+  - name: JAVA_OPTS
+    value: -Xms2048m -Xmx2048m
+
+resources:
+  limits:
+    cpu: 2
+    memory: 4Gi
+
+apps:
+  registry: harbor.sunits.com
+  imageauth: k8sharbor-secret
+  port: 80
+  portname: nginx
+  domain:
+    host: scui.sunits.net
+    path: /
+
+monitor:
+  enabled: true
+  port: 80
+  path: /
+  timeout: 5
+  period: 5
+  failure: 3
+  delayseconds: 15
+
+storage:
+  enabled: false
+  share: true
+  size: 10Gi
+  mnt: /data/share/nri/be

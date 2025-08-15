@@ -1,0 +1,272 @@
+{
+  "pages": [
+    {
+      "path": "pages/initLoadingPage",
+      "style": {
+        "navigationBarTitleText": "",
+        "navigationStyle": "custom",
+        "enablePullDownRefresh": false,
+        "backgroundColorTop": "#3a7afe"
+      }
+    },
+    {
+      "path": "pages/login",
+      "style": {
+        "navigationBarTitleText": "登录",
+        "app-plus": {
+          "titleNView": false
+        }
+      }
+    },
+    {
+      "path": "pages/tabBar/home/homePage",
+      "style": {
+        "navigationBarTitleText": "",
+        "navigationStyle": "custom",
+        "enablePullDownRefresh": false,
+        "backgroundColorTop": "#3a7afe",
+        "app-plus": {
+          "scrollIndicator": "none",
+          "bounce": "none",
+          "titleNView": false
+        }
+      }
+    },
+    {
+      "path": "pages/tabBar/home/messageListPage",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "通知消息"
+      }
+    },
+    {
+      "path": "js_sdk/system-permission/permission_demo",
+      "style": {
+        "navigationBarTitleText": "权限示例"
+      }
+    },
+    {
+      "path": "pages/workorder-detail/workorder-detail",
+      "style": {
+        "navigationBarTitleText": "",
+        "navigationStyle": "custom",
+        "enablePullDownRefresh": false,
+        "app-plus": {
+          "scrollIndicator": "none",
+          "bounce": "none",
+          "titleNView": false
+        }
+      }
+    },
+    {
+      "path": "pages/tabBar/workorder/workorderPage",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "工单"
+      }
+    },
+    {
+      "path": "pages/workorder-detail/workorderModules/OtherFunction/processTrajectories/processTrajectories",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "流程轨迹"
+      }
+    },
+    {
+      "path": "pages/workorder-detail/workorderModules/OtherFunction/uploadFilesInfo/uploadFilesInfo",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "附件信息"
+      }
+    },
+    {
+      "path": "pages/tabBar/part/partPage",
+      "style": {
+        "navigationBarTitleText": "",
+        "navigationStyle": "custom",
+        "enablePullDownRefresh": false,
+        "backgroundColorTop": "#3a7afe"
+      }
+    },
+    {
+      "path": "pages/tabBar/mine/index",
+      "style": {
+        "navigationBarTitleText": "",
+        "navigationStyle": "custom",
+        "enablePullDownRefresh": false,
+        "backgroundColorTop": "#3a7afe"
+      }
+    },
+    {
+      "path": "pages/tabBar/mine/info/myEditorPage",
+      "style": {
+        "navigationBarTitleText": "",
+        "navigationStyle": "custom",
+        "enablePullDownRefresh": false,
+        "backgroundColorTop": "#3a7afe"
+      }
+    },
+    {
+      "path": "pages/tabBar/mine/avatar/index",
+      "style": {
+        "navigationBarTitleText": "修改头像",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/tabBar/mine/info/index",
+      "style": {
+        "navigationBarTitleText": "个人信息",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/tabBar/mine/info/editInfo",
+      "style": {
+        "navigationBarTitleText": "",
+        "navigationStyle": "custom",
+        "enablePullDownRefresh": false,
+        "backgroundColorTop": "#F5F6FA"
+      }
+    },
+    {
+      "path": "pages/PreviewCommon/webview/index",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "浏览网页"
+      }
+    },
+    {
+      "path": "pages/PreviewCommon/textview/index",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "浏览文本"
+      }
+    },
+    {
+      "path": "pages/PreviewCommon/videoview/index",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "浏览视频"
+      }
+    },
+    {
+      "path": "pages/workorder-detail/workorderModules/BottomButton/OtherButton/refuse/refusePage",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "拒单"
+      }
+    },
+    {
+      "path": "pages/workorder-detail/workorderModules/BottomButton/OtherButton/transfer/transferPage",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "转派"
+      }
+    },
+    {
+      "path": "pages/workorder-detail/workorderModules/BottomButton/OtherButton/specialFee/downstreamSpecialFeePage",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "下游特殊费用申请"
+      }
+    },
+    {
+      "path": "pages/workorder-detail/workorderModules/BottomButton/OtherButton/specialFee/downstreamSpecialFeeHistoryPage",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "历史特费申请"
+      }
+    },
+    {
+      "path": "pages/workorder-detail/workorderModules/BottomButton/OtherButton/rollback/rollbackPage",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "回退"
+      }
+    },
+    {
+      "path": "pages/workorder-detail/workorderModules/BottomButton/OtherButton/closeOrder/closeOrderPage",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "关单"
+      }
+    },
+    // 若依自带的页面
+    {
+      "path": "pages/tabBar/mine/info/edit",
+      "style": {
+        "navigationBarTitleText": "编辑资料"
+      }
+    },
+    {
+      "path": "pages/tabBar/mine/pwd/index",
+      "style": {
+        "navigationBarTitleText": "修改密码",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/tabBar/mine/setting/index",
+      "style": {
+        "navigationBarTitleText": "应用设置"
+      }
+    },
+    {
+      "path": "pages/tabBar/mine/help/index",
+      "style": {
+        "navigationBarTitleText": "常见问题"
+      }
+    },
+    {
+      "path": "pages/tabBar/mine/about/index",
+      "style": {
+        "navigationBarTitleText": "关于我们"
+      }
+    }
+  ],
+  "tabBar": {
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/tabBar/home/homePage",
+        "iconPath": "static/images/tabbar/home.png",
+        "selectedIconPath": "static/images/tabbar/home-selected.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/tabBar/workorder/workorderPage",
+        "iconPath": "static/images/tabbar/workorder.png",
+        "selectedIconPath": "static/images/tabbar/workorder-selected.png",
+        "text": "工单"
+      },
+      {
+        "pagePath": "pages/tabBar/part/partPage",
+        "iconPath": "static/images/tabbar/spare-parts.png",
+        "selectedIconPath": "static/images/tabbar/spare-parts-selected.png",
+        "text": "备件"
+      },
+      {
+        "pagePath": "pages/tabBar/mine/index",
+        "iconPath": "static/images/tabbar/my.png",
+        "selectedIconPath": "static/images/tabbar/my-selected.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "condition": {
+    "list": [
+      // {
+      //   "name": "权限示例",
+      //   "path": "js_sdk/system-permission/permission_demo",
+      //   "query": "id=1927912623652200449"
+      // }
+    ]
+  },
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "若依移动端",
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "backgroundColor": "#F8F8F8"
+  }
+}

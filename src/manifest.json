@@ -1,0 +1,196 @@
+{
+    "name" : "阳光微服",
+    "appid" : "__UNI__43E4094",
+    "description" : "智能时代无忧售前售后服务平台",
+    "versionName" : "1.0.0",
+    "versionCode" : 100,
+    "transformPx" : false,
+    "networkTimeout" : {
+        "request" : 60000,
+        "connectSocket" : 60000,
+        "uploadFile" : 60000,
+        "downloadFile" : 60000
+    },
+    /* 5+App特有相关 */
+    "app-plus" : {
+        "usingComponents" : true,
+        "nvueStyleCompiler" : "uni-app",
+        "compilerVersion" : 3,
+        "splashscreen" : {
+            "alwaysShowBeforeRender" : true,
+            "waiting" : true,
+            "autoclose" : true,
+            "delay" : 0
+        },
+        /* 模块配置 */
+        "modules" : {
+            "Camera" : {},
+            "Push" : {},
+            "VideoPlayer" : {},
+            "Barcode" : {},
+            "Geolocation" : {},
+            "Maps" : {}
+        },
+        /* 应用发布信息 */
+        "distribute" : {
+            /* android打包配置 */
+            "android" : {
+                "permissions" : [
+                    "<uses-permission android:name=\"android.permission.CHANGE_NETWORK_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.MOUNT_UNMOUNT_FILESYSTEMS\"/>",
+                    "<uses-permission android:name=\"android.permission.VIBRATE\"/>",
+                    "<uses-permission android:name=\"android.permission.READ_LOGS\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\"/>",
+                    "<uses-feature android:name=\"android.hardware.camera.autofocus\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.CAMERA\"/>",
+                    "<uses-permission android:name=\"android.permission.GET_ACCOUNTS\"/>",
+                    "<uses-permission android:name=\"android.permission.READ_PHONE_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.CHANGE_WIFI_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.WAKE_LOCK\"/>",
+                    "<uses-permission android:name=\"android.permission.FLASHLIGHT\"/>",
+                    "<uses-feature android:name=\"android.hardware.camera\"/>",
+                    "<uses-permission android:name=\"android.permission.WRITE_SETTINGS\"/>"
+                ],
+                "abiFilters" : [ "armeabi-v7a", "arm64-v8a" ],
+                "minSdkVersion" : 21,
+                "targetSdkVersion" : 35
+            },
+            /* ios打包配置 */
+            "ios" : {
+                "privacyDescription" : {
+                    "NSPhotoLibraryUsageDescription" : "APP需要您的同意才能访问相册,以便您上传维修信息",
+                    "NSPhotoLibraryAddUsageDescription" : "APP需要您的同意才能添加图片,以便您上传维修信息",
+                    "NSCameraUsageDescription" : "APP需要您的同意才能访问相机,以便您扫描维修信息",
+                    "NSLocationWhenInUseUsageDescription" : "APP需要您的同意才能在使用期间访问位置,以便您打卡、路线查询、位置导航",
+                    "NSLocationAlwaysAndWhenInUseUsageDescription" : "APP需要您的同意才能访问位置,以便您打卡、路线查询、位置导航",
+                    "NSLocationAlwaysUsageDescription" : "APP需要您的同意才能在后台使用期间访问位置,以便您位置导航",
+                    "NSMicrophoneUsageDescription" : "APP需要您的同意才能在使用期间访问麦克风,以便您进行便捷沟通",
+                    "NSLocalNetworkUsageDescription" : "APP需要您的同意才能查找并连接到同一网络下的其他设备，实现文件共享、打印服务等功能"
+                },
+                "dSYMs" : false,
+                "idfa" : false
+            },
+            /* SDK配置 */
+            "sdkConfigs" : {
+                "push" : {
+                    "unipush" : {
+                        "offline" : false,
+                        "icons" : {
+                            "small" : {
+                                "ldpi" : "unpackage/pushApp/18x18.png",
+                                "mdpi" : "unpackage/pushApp/24x24.png",
+                                "hdpi" : "unpackage/pushApp/36x36.png",
+                                "xhdpi" : "unpackage/pushApp/48x48.png",
+                                "xxhdpi" : "unpackage/pushApp/72x72.png"
+                            }
+                        }
+                    }
+                },
+                "geolocation" : {
+                    "system" : {
+                        "__platform__" : [ "ios", "android" ]
+                    },
+                    "amap" : {
+                        "name" : "amapCxVXhv02k",
+                        "__platform__" : [ "ios", "android" ],
+                        "appkey_ios" : "7d25b406ae0472a003e87312d839eae6",
+                        "appkey_android" : "d7719ae232092d567038730109e17b75"
+                    }
+                },
+                "maps" : {
+                    "amap" : {
+                        "name" : "amapCxVXhv02k",
+                        "appkey_ios" : "7d25b406ae0472a003e87312d839eae6",
+                        "appkey_android" : "d7719ae232092d567038730109e17b75"
+                    }
+                }
+            },
+            "icons" : {
+                "android" : {
+                    "hdpi" : "unpackage/res/icons/android/72x72.png",
+                    "xhdpi" : "unpackage/res/icons/android/96x96.png",
+                    "xxhdpi" : "unpackage/res/icons/android/144x144.png",
+                    "xxxhdpi" : "unpackage/res/icons/android/192x192.png"
+                },
+                "ios" : {
+                    "appstore" : "unpackage/res/icons/1024x1024.png",
+                    "ipad" : {
+                        "app" : "unpackage/res/icons/76x76.png",
+                        "app@2x" : "unpackage/res/icons/152x152.png",
+                        "notification" : "unpackage/res/icons/20x20.png",
+                        "notification@2x" : "unpackage/res/icons/40x40.png",
+                        "proapp@2x" : "unpackage/res/icons/167x167.png",
+                        "settings" : "unpackage/res/icons/29x29.png",
+                        "settings@2x" : "unpackage/res/icons/58x58.png",
+                        "spotlight" : "unpackage/res/icons/40x40.png",
+                        "spotlight@2x" : "unpackage/res/icons/80x80.png"
+                    },
+                    "iphone" : {
+                        "app@2x" : "unpackage/res/icons/120x120.png",
+                        "app@3x" : "unpackage/res/icons/180x180.png",
+                        "notification@2x" : "unpackage/res/icons/40x40.png",
+                        "notification@3x" : "unpackage/res/icons/60x60.png",
+                        "settings@2x" : "unpackage/res/icons/58x58.png",
+                        "settings@3x" : "unpackage/res/icons/87x87.png",
+                        "spotlight@2x" : "unpackage/res/icons/80x80.png",
+                        "spotlight@3x" : "unpackage/res/icons/120x120.png"
+                    }
+                }
+            },
+            "splashscreen" : {
+                "iosStyle" : "storyboard",
+                "ios" : {
+                    "storyboard" : "unpackage/uniLoding/storyboard/storyboard.zip"
+                },
+                "androidStyle" : "common"
+            }
+        }
+    },
+    /* 快应用特有相关 */
+    "quickapp" : {},
+    /* 小程序特有相关 */
+    "mp-weixin" : {
+        "appid" : "",
+        "setting" : {
+            "urlCheck" : true,
+            "minified" : true
+        },
+        "usingComponents" : true
+    },
+    "mp-alipay" : {
+        "usingComponents" : true
+    },
+    "mp-baidu" : {
+        "usingComponents" : true
+    },
+    "mp-toutiao" : {
+        "usingComponents" : true
+    },
+    "uniStatistics" : {
+        "enable" : false
+    },
+    "vueVersion" : "3",
+    "h5" : {
+        "title" : "阳光微服",
+        "router" : {
+            "mode" : "hash",
+            "base" : "/h5/"
+        },
+        "devServer" : {
+            "https" : false
+        }
+    },
+    "app-harmony" : {
+        "distribute" : {
+            "icons" : {
+                "foreground" : "unpackage/res/icons/1024x1024.png",
+                "background" : "unpackage/res/icons/1024x1024.png"
+            },
+            "splashScreens" : {
+                "startWindowIcon" : "unpackage/res/icons/1024x1024.png"
+            },
+            "bundleName" : "com.sunits.dsapptest"
+        }
+    }
+}

@@ -1,0 +1,50 @@
+.otherPage-container {
+  min-height: 100vh;
+  background-color: #f5f6fa;
+  display: flex;
+  flex-direction: column;
+
+  .formInfo {
+    padding: 5px 10px;
+    padding-bottom: 10px;
+    background-color: #fff;
+    margin: 10px;
+    border-radius: 8px;
+  }
+
+  .footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+
+    .btn {
+      flex: 1;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 4px;
+      font-size: 14px;
+
+      &.cancel {
+        background-color: #f5f6fa;
+        color: #666;
+      }
+
+      &.confirm {
+        background-color: #3870fd;
+        color: #fff;
+
+        &.isLoading {
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+}

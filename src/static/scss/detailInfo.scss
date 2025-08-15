@@ -1,0 +1,89 @@
+.info-wrap {
+  background-color: #fff;
+  margin-bottom: 10px;
+
+  .section-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e5e6eb;
+    height: 45px;
+
+    .biaoTititle {
+      font-weight: 500;
+      font-size: 15px;
+      color: #1d2129;
+      padding-left: 15px;
+      position: relative;
+
+      .titEnd {
+        font-weight: 500;
+        font-size: 13px;
+        color: #D2D3D4;
+        margin-left: 5px;
+      }
+    }
+  }
+}
+
+.info-container {
+  padding: 15px;
+
+  .info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    position: relative;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    .itemTitle {
+      font-weight: 400;
+      font-size: 14px;
+      color: #86909c;
+      flex-shrink: 0;
+    }
+
+    .itemVal {
+      font-weight: 400;
+      font-size: 14px;
+      color: #272e3b;
+      flex: 1;
+      display: flex;
+      align-items: center;
+
+      .icon-fuzhi1 {
+        margin-left: 5px;
+      }
+    }
+
+    .highlight {
+      color: #ff7d00;
+    }
+
+    .copy-icon {
+      margin-left: 5px;
+      color: #3870fd;
+      font-size: 14px;
+    }
+
+    .action-btn {
+      height: 22px;
+      background: rgba(25, 85, 176, 0.12);
+      /* 使用rgba设置背景透明度 */
+      border-radius: 13px;
+      font-weight: 400;
+      font-size: 12px;
+      color: #1955b0;
+      /* 文字颜色保持不透明 */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0 10px;
+      border: none;
+      /* 可选，移除默认边框 */
+    }
+  }
+}

@@ -1,0 +1,19 @@
+FROM harbor.sunits.com/proxy/library/node:23.1.0-slim AS builder
+
+COPY . /sunits/src
+WORKDIR /sunits/src
+
+RUN echo "building" && \
+    npm config set registry https://registry.npmmirror.com && \
+    npm install -g pnpm && \
+    pnpm install && \
+    pnpm run build:stage
+
+
+
+FROM harbor.sunits.com/proxy/library/nginx:stable
+
+COPY --from=builder /sunits/src/dist /sunits/sunits-ui
+COPY deployment/config/etc/nginx/nginx.conf /etc/nginx/nginx.conf
+COPY deployment/config/etc/nginx/conf.d /etc/nginx/conf.d
+WORKDIR /sunits/sunits-ui

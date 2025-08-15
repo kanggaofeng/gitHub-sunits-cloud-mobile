@@ -1,0 +1,55 @@
+{
+  "editor.formatOnType": true,
+  "editor.formatOnSave": true,
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.tabSize": 2,
+  "editor.formatOnPaste": true,
+  "editor.guides.bracketPairs": "active",
+  "files.autoSave": "afterDelay",
+  "git.confirmSync": false,
+  "workbench.startupEditor": "newUntitledFile",
+  "editor.suggestSelection": "first",
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  "css.lint.propertyIgnoredDueToDisplay": "ignore",
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": true,
+    "strings": true
+  },
+  "files.associations": {
+    "editor.snippetSuggestions": "top"
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "vscodeCustomCodeColor.highlightValue": ["v-loading", "v-auth", "v-copy", "v-longpress", "v-optimize", "v-ripple", "v-hasPermi", "v-hasRole"],
+  "vscodeCustomCodeColor.highlightValueColor": "#b392f0",
+  "css.lint.unknownAtRules": "ignore",
+
+  // 新增以下设置
+  "eslint.validate": ["javascript", "javascriptreact", "vue"],
+
+  // 使用 Prettier 作为默认的格式化工具
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  // 禁用内置的 JavaScript 验证，避免与 ESLint 冲突
+  "javascript.validate.enable": false,
+
+  // 禁用内置的 TypeScript 验证，避免与 ESLint 冲突
+  "typescript.validate.enable": false,
+
+  // 确保 ESLint 不与 Prettier 的规则冲突
+  "eslint.format.enable": true,
+  "workbench.editor.enablePreview": false,
+
+  "javascript.suggest.autoImports": false,
+  "typescript.suggest.autoImports": false
+  // "files.exclude": {
+  //   "**/node_modules": true
+  // }
+}
